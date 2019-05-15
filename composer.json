@@ -1,0 +1,31 @@
+{
+    "name": "pdf-api/laravel",
+    "description": "Easy and realiable cloud PDF generation",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Efrain Salas",
+            "email": "efrain@domibi.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^5.8",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "PdfApi\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PdfApi\\ServiceProvider"
+            ],
+            "aliases": {
+                "PdfApi": "PdfApi\\PdfApiService"
+            }
+        }
+    }
+}
